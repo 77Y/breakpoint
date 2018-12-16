@@ -6,4 +6,6 @@ import democome.breakpoint.model.User;
 
 public interface UserDao extends JpaRepository<User, Long> {
 
+	User findByName(String name);
+
 }

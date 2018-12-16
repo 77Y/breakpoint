@@ -12,7 +12,7 @@ import democome.breakpoint.model.User;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = BreakpointApplication.class)
-public class UserDOTest {
+public class UserDaoTest {
 
 	@Autowired
 	private UserDao userDao;
@@ -36,6 +36,15 @@ public class UserDOTest {
 	// @Test
 	// public void select() {
 	// User user = userDao.findById(1L).get();
+	// System.err.println("user name is :" + user.getName());
+	// }
+
+	/**
+	 * 根据用户名查询user
+	 */
+	// @Test
+	// public void select() {
+	// User user = userDao.findByName("democome");
 	// System.err.println("user name is :" + user.getName());
 	// }
 
